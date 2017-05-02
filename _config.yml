@@ -11,8 +11,8 @@ highlighter: rouge
 title : Epiphni
 tagline: The Joy of Learning
 author :
-  name : Vincent Ooi
-  email : vincent@ooi.cc
+  name : Epiphni Inc.
+  email : epiphni@ooi.cc
   github : epiphni
   twitter : epiphni
   feedburner : epiphni
@@ -84,7 +84,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : epiphni
+      short_name : www-epiphni-com
     livefyre :
       site_id : 123
     intensedebate :
