@@ -3,144 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Ooi ✨</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vincent Ooi - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: #6c5ce7;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e9 100%);
             min-height: 100vh;
             padding: 40px 20px;
-            color: white;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
-            border-radius: 30px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
+        header { text-align: center; margin-bottom: 40px; }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
         }
-        header::before {
-            content: '✨';
-            position: absolute;
-            font-size: 100px;
-            opacity: 0.1;
-            top: -20px;
-            right: -20px;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        .links {
+        h1 { font-size: 2.2rem; color: #2d3436; }
+        .tagline { color: #00b894; font-weight: 500; margin-top: 8px; }
+        .contact {
             display: flex;
             justify-content: center;
-            gap: 12px;
-            margin-top: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 16px;
         }
-        .links a {
-            color: white;
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 25px;
+        .contact a {
+            color: #00b894;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        .links a:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            background: rgba(0,184,148,0.1);
             border-radius: 20px;
-            padding: 24px;
-            transition: transform 0.3s;
-        }
-        .card:hover { transform: translateY(-5px); }
-        h2 {
             font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.7;
+        }
+        section { margin-bottom: 32px; }
+        h2 {
+            font-size: 1.3rem;
+            color: #00b894;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: #00b894;
+            border-radius: 2px;
+        }
+        .card {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 20px;
             margin-bottom: 16px;
         }
-        h3 { font-size: 1.2rem; margin-bottom: 8px; }
-        .meta { opacity: 0.7; font-size: 0.9rem; }
-        .description { margin-top: 12px; opacity: 0.9; line-height: 1.6; }
-        .skills-section { margin-top: 30px; }
+        h3 { color: #2d3436; font-size: 1.1rem; }
+        .meta { color: #636e72; font-size: 0.9rem; margin-top: 4px; }
+        .description { margin-top: 12px; color: #444; line-height: 1.7; }
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            justify-content: center;
         }
         .skill {
-            background: #fd79a8;
-            padding: 10px 20px;
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            color: white;
+            padding: 8px 18px;
             border-radius: 25px;
-            font-weight: 500;
-            transition: transform 0.2s;
-        }
-        .skill:hover { transform: scale(1.05); }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            opacity: 0.6;
             font-size: 0.9rem;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Vincent Ooi 👋</h1>
-            <p class="subtitle">A professional software developer</p>
-            <div class="links">
-                <a href="mailto:vincent@dasecure.com">📧 Email</a>
+            <div class="avatar">V</div>
+            <h1>Vincent Ooi</h1>
+            <p class="tagline">Dynamic Software Development Engineer with expertise in firmware development and microcontroller integration, particularly with ESP32, STM32, NRF52840. As a former CTO and founder of Agate Technologies, I led the creation of innovative device drivers and removable storage solutions while successfully managing a global field engineering organization. Proficient in Python and C++, I am dedicated to driving technological advancement and delivering impactful solutions.</p>
+            <div class="contact">
+                <a href="mailto:vincent@dasecure.com">vincent@dasecure.com</a>
                 
                 
             </div>
         </header>
         
-        <div class="grid">
-            <div class="card">
-    <h2>💼 Experience</h2>
+        <section>
+    <h2>Experience</h2>
+    <div class="card">
     <h3>Engineer </h3>
-    <p class="meta">SBR Strategic • Feb 2016 - Present</p>
-    <p class="description">I wish in iOS projects and microcontrollers</p>
+    <p class="meta">Dasecure solutions LLC • Feb 2026 - Present</p>
+    <p class="description">Mobile applications development
+Web security and B2B solutions development</p>
+</div><div class="card">
+    <h3>Consultant</h3>
+    <p class="meta">SBR Strategic • Feb 2018 - Present</p>
+    <p class="description">Business development management</p>
+</div><div class="card">
+    <h3>CTO</h3>
+    <p class="meta">Agate Technologies • Jan 1995 - Feb 2002</p>
+    <p class="description">Develop device drivers and removable storage solutions.</p>
+</div><div class="card">
+    <h3>Director of engineering </h3>
+    <p class="meta">Conner Peripherals • Jan 1982 - Jan 1991</p>
+    <p class="description">Worldwide applications engineering. High customer engagement, proving solutions to customers integration needs. Develop firmware for disk drives.</p>
+</div><div class="card">
+    <h3>Applications Engineer</h3>
+    <p class="meta">Reuters • Jan 1980 - Jan 1981</p>
+    <p class="description">I supported banks and financial organizations on their dealing terminals. In additional, I helped develop the financial paging system which pages real time stock information.</p>
 </div>
-            
-            <div class="card">
-    <h2>🎓 Education</h2>
-    <h3>Engineering</h3>
-    <p class="meta">Singapore polytechnic</p>
-</div>
-        </div>
+</section>
         
-        <div class="skills-section">
-    <div class="card" style="text-align: center;">
-        <h2>⚡ Skills</h2>
-        <div class="skills">
-            <span class="skill">Coding</span><span class="skill">Microcontrollers</span><span class="skill">Python </span><span class="skill">C++</span>
-        </div>
+        
+        
+        <section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span class="skill">Coding</span><span class="skill">Microcontrollers</span><span class="skill">Python </span><span class="skill">C++</span>
     </div>
-</div>
-        
-        <footer>Made with 💜 using ResumeBuilder</footer>
+</section>
     </div>
 </body>
 </html>
