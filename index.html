@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Ooi ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: #6c5ce7;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            border-radius: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '✨';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            top: -20px;
+            right: -20px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .links a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .links a:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 24px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.7;
+            margin-bottom: 16px;
+        }
+        h3 { font-size: 1.2rem; margin-bottom: 8px; }
+        .meta { opacity: 0.7; font-size: 0.9rem; }
+        .description { margin-top: 12px; opacity: 0.9; line-height: 1.6; }
+        .skills-section { margin-top: 30px; }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skill {
+            background: #fd79a8;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        .skill:hover { transform: scale(1.05); }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vincent Ooi 👋</h1>
+            <p class="subtitle">A professional software developer</p>
+            <div class="links">
+                <a href="mailto:vincent@dasecure.com">📧 Email</a>
+                
+                
+            </div>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+    <h2>💼 Experience</h2>
+    <h3>Engineer </h3>
+    <p class="meta">SBR Strategic • Feb 2016 - Present</p>
+    <p class="description">I wish in iOS projects and microcontrollers</p>
+</div>
+            
+            <div class="card">
+    <h2>🎓 Education</h2>
+    <h3>Engineering</h3>
+    <p class="meta">Singapore polytechnic</p>
+</div>
+        </div>
+        
+        <div class="skills-section">
+    <div class="card" style="text-align: center;">
+        <h2>⚡ Skills</h2>
+        <div class="skills">
+            <span class="skill">Coding</span><span class="skill">Microcontrollers</span><span class="skill">Python </span><span class="skill">C++</span>
+        </div>
+    </div>
+</div>
+        
+        <footer>Made with 💜 using ResumeBuilder</footer>
+    </div>
+</body>
+</html>
