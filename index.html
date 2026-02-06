@@ -6,26 +6,32 @@
     <title>Vincent Ooi - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #2d3436;
+            --accent: #6c5ce7;
+            --background: #ffffff;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--secondary);
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 24px;
-            background: #fff;
+            background: var(--background);
         }
         header {
             text-align: center;
             margin-bottom: 32px;
             padding-bottom: 24px;
-            border-bottom: 2px solid #0066cc;
+            border-bottom: 2px solid var(--primary);
         }
         h1 {
             font-family: 'Merriweather', serif;
             font-size: 2.5rem;
-            color: #1a1a2e;
+            color: var(--secondary);
             margin-bottom: 8px;
         }
         .contact {
@@ -36,7 +42,7 @@
             color: #666;
             font-size: 0.9rem;
         }
-        .contact a { color: #0066cc; text-decoration: none; }
+        .contact a { color: var(--primary); text-decoration: none; }
         .summary {
             font-size: 1.05rem;
             color: #444;
@@ -48,7 +54,7 @@
         h2 {
             font-family: 'Merriweather', serif;
             font-size: 1.3rem;
-            color: #0066cc;
+            color: var(--primary);
             border-bottom: 1px solid #ddd;
             padding-bottom: 8px;
             margin-bottom: 16px;
@@ -62,7 +68,7 @@
             align-items: baseline;
             flex-wrap: wrap;
         }
-        h3 { font-size: 1.1rem; color: #1a1a2e; }
+        h3 { font-size: 1.1rem; color: var(--secondary); }
         .company, .institution { color: #666; font-weight: 600; }
         .date { color: #888; font-size: 0.9rem; }
         .description { margin-top: 8px; color: #444; }
@@ -89,108 +95,17 @@
     <header>
         <h1>Vincent Ooi</h1>
         <div class="contact">
-            <span>Vincent@dasecure.com</span>
+            <span>vincent@dasecure.com</span>
             <span>+1 (408) 874-5176</span>
-            <span>San Francisco, CA</span>
+            <span>San Francisco CA</span>
             
-            <a href="https://www.dasecure.com">Website</a>
+            
         </div>
     </header>
     
     <p class="summary">Results-oriented software engineer specializing in firmware and STM32, NRF52840, ESP32 technology. As Founder and CTO of Agate Technologies, I developed innovative device drivers and storage solutions while leading a global engineering team, driving impactful solutions that enhance user experiences and optimize efficiency.</p>
     
-    <section>
-    <h2>Experience</h2>
-    <div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Founder</h3>
-            <span class="company">Dasecure Solutions LLC</span>
-        </div>
-        <span class="date">Feb 2026 - </span>
-    </div>
-    <p class="description">• Spearheaded the design and launch of innovative iOS and Android applications, achieving a 30% increase in user engagement within the first six months.  
-• Developed and implemented a robust SaaS platform, resulting in a 40% reduction in operational costs for clients.  
-• Led a cross-functional team to create proprietary intellectual property, enhancing product functionality and securing three key patents.  
-• Drove strategic vision and growth for Dasecure Solutions LLC, achieving a 50% year-over-year revenue increase.</p>
     
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Consultant</h3>
-            <span class="company">SBR Strategic</span>
-        </div>
-        <span class="date">Feb 2020 - Present</span>
-    </div>
-    
-    
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>CTO</h3>
-            <span class="company">Agate Technologies</span>
-        </div>
-        <span class="date">Feb 1997 - Feb 2001</span>
-    </div>
-    <p class="description">• Spearheaded the development of innovative core intellectual property, enhancing the company's market position and driving a 30% increase in product adoption.  
-• Led the design and implementation of cutting-edge removable storage solutions, resulting in a 25% improvement in data transfer speeds.  
-• Directed device driver development projects, ensuring seamless compatibility across multiple platforms and reducing customer support inquiries by 40%.  
-• Collaborated with cross-functional teams to streamline product development processes, shortening time-to-market by 15%.</p>
-    
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Director of Engineering</h3>
-            <span class="company">Conner Peripherals</span>
-        </div>
-        <span class="date">Jan 1989 - Jan 1995</span>
-    </div>
-    <p class="description">• Led a cross-functional team of 50+ engineers to optimize firmware development processes, reducing time-to-market by 25%.  
-• Spearheaded the certification program, achieving a 95% compliance rate with industry standards, enhancing product reliability.  
-• Implemented advanced testing protocols in compatibility labs, resulting in a 40% increase in product performance metrics.  
-• Streamlined applications engineering workflows, improving project delivery efficiency by 30% through agile methodologies.</p>
-    
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Applications Engineering Manager</h3>
-            <span class="company">Conner Peripherals</span>
-        </div>
-        <span class="date">Jan 1988 - Jan 1989</span>
-    </div>
-    <p class="description">• Led a high-performing applications engineering team across Asia, enhancing collaboration and efficiency by 30%.  
-• Resolved complex integration issues and conducted compatibility studies, improving product integration success rates by 25%.  
-• Spearheaded market-specific solutions, driving customer satisfaction and boosting regional sales by 15%.  
-• Implemented streamlined processes for project management, reducing time-to-market for new applications by 20%.</p>
-    
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Application Engineer</h3>
-            <span class="company">Conner Peripherals</span>
-        </div>
-        <span class="date">Jan 1987 - Feb 1988</span>
-    </div>
-    <p class="description">• Spearheaded technical support initiatives for the South Asian market, enhancing customer satisfaction by 30%.  
-• Collaborated with cross-functional teams to optimize application performance, resulting in a 25% increase in system efficiency.  
-• Conducted in-depth training sessions for clients, improving product adoption rates by 40%.  
-• Analyzed market trends to identify growth opportunities, contributing to a 15% increase in regional sales.</p>
-    
-</div><div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <h3>Applications Engineer</h3>
-            <span class="company">Reuters</span>
-        </div>
-        <span class="date">Jan 1987 - Jun 1988</span>
-    </div>
-    <p class="description">• Partnered with banks and financial institutions to enhance transaction efficiency.  
-• Engineered and deployed a real-time paging software system, boosting stock information delivery speed and accuracy
-• Delivered technical support and training that elevated user satisfaction ratings.
-• Led hardware integration projects, ensuring seamless functionality across multiple financial platforms.</p>
-    
-</div>
-</section>
     
     <section>
     <h2>Education</h2>
@@ -200,7 +115,7 @@
             <h3>Diploma in Electrical Engineering</h3>
             <span class="institution">Singapore Polytechnic</span>
         </div>
-        <span class="date">Jun 1985</span>
+        <span class="date">Jun 1986</span>
     </div>
 </div>
 </section>
@@ -208,7 +123,7 @@
     <section>
     <h2>Skills</h2>
     <div class="skills">
-        <span class="skill">Cloud Computing</span><span class="skill">iOS development</span><span class="skill">Android development</span><span class="skill">Firmware development</span><span class="skill">Hardware development</span><span class="skill">API development</span>
+        <span class="skill">Cloud Computing</span><span class="skill">Containerization</span><span class="skill">API Development</span><span class="skill">Version Control</span><span class="skill">iOS development</span><span class="skill">Android development</span><span class="skill">Firmware development</span>
     </div>
 </section>
     
